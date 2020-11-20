@@ -1,2 +1,37 @@
 // Import page-specific CSS files here.
 @import "home";
+@import "bg";
+
+h1 {
+  font-family: $headers-font;
+  color: $pink;
+}
+
+.link {
+  color: $blue;
+  font-family: $headers-font;
+  font-size: 20px;
+  background-color: white;
+  padding: 8px;
+}
+
+.link-cocktail{
+  color: pink;
+}
+
+.cocktail-img{
+  width: 100px;
+  display: inline-block;
+}
+
+.center-text{
+  width:600px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  text-align: left;
+}
+
+.juicy-size{
+  font-size: 80px;
+}

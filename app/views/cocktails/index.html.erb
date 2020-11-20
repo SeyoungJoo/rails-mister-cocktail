@@ -1,0 +1,21 @@
+<div class="index-bg">
+
+<h1>Cocktails</h1>
+
+<div class="center-text">
+<h1 class="juicy-size">Juicy <br>Strawberry<br>Cocktail</h1>
+
+<ul>
+<% @cocktails.each do |c| %>
+<li><%= link_to c.name, root_path(c), class:"link-cocktail"%>
+</li>
+<% end %>
+</ul>
+<%= image_tag "cocktail3.jpg", class:"cocktail-img" %>
+
+
+<br>
+
+<%= link_to 'Add a new cocktail', new_cocktail_path, class:"link" %>
+</div>
+</div>
