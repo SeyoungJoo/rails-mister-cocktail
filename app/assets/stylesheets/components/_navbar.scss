@@ -11,12 +11,16 @@
   width: 40px;
 }
 
-
 .fa-cocktail{
-  color: pink;
+  color: $blue;
   font-size: 40px;
 }
 
 .nav-link{
   font-family: $headers-font;
+  color: white;
+}
+
+.navbar {
+  background-color: $pink;
 }
