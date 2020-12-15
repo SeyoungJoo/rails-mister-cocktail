@@ -13,3 +13,15 @@ Ingredient.create(name: "mint leaves")
 Ingredient.create(name: "london dry gin")
 Ingredient.create(name: "orange juice")
 Ingredient.create(name: "vodka")
+
+require 'json'
+
+filepath = 'cocktail.json'
+
+serialized_cocktails = File.read("cocktail.json")
+
+beers = JSON.parse(serialized_beers)
+
+beers[drinks] each do |cocktail|
+puts Ingredient.create(name:cocktail.stringgredient1)
+end
