@@ -12,7 +12,7 @@ Ingredient.create(name: "sugar syrup")
 Ingredient.create(name: "mint leaves")
 Ingredient.create(name: "london dry gin")
 Ingredient.create(name: "orange juice")
-Ingredient.create(name: "vodka")
+Ingredient.create(name: "Vodka")
 
 require 'json'
 
