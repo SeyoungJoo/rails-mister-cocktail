@@ -31,8 +31,9 @@ end
   attributes = {
     name: Faker::Coffee.blend_name,
     description: Faker::Coffee.notes,
-    img_url: ['https://unsplash.com/photos/QsmdVT5pTMw','https://unsplash.com/photos/vAkIPzXOSOc', 'https://unsplash.com/photos/l4OSEZZSQuQ', 'https://images.unsplash.com/photo-1601924381523-019b78541b95?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60', 'https://images.unsplash.com/photo-1486947799489-3fabdd7d32a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60', 'https://images.unsplash.com/photo-1563223771-375783ee91ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60'].sample
+    img_url: ['https://images.unsplash.com/photo-1556855810-ac404aa91e85?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80', 'https://images.unsplash.com/photo-1563223771-5fe4038fbfc9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80', 'https://images.unsplash.com/photo-1550426735-c33c7ce414ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=620&q=80', 'https://images.unsplash.com/photo-1583898350903-99fa829dad3d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80', 'https://images.unsplash.com/photo-1578664182354-e3878189cdac?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80', 'https://images.unsplash.com/photo-1553607558-455f4310f6ec?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=636&q=80', 'https://images.unsplash.com/photo-1599021456807-25db0f974333?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=679&q=80', 'https://images.unsplash.com/photo-1560508179-b2c9a3f8e92b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'].sample
   }
+
 
   cocktail = Cocktail.create!(attributes)
 
@@ -47,5 +48,6 @@ end
 
   dose = Dose.create!(doses_attributes)
 
+  puts "created #{cocktail.name} with #{dose.description} of #{one_ingredient.name}"
   end
 end
