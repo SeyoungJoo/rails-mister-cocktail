@@ -1,34 +1,29 @@
 <div class="index-bg">
   <div class="flexbox">
     <div class="center-text">
-    <h1 class="juicy-size">Mr. Cocktail<br>Organizer</h1>
-    <ul>
-    <% @cocktails.each do |c| %>
-    <li><%= link_to c.name, cocktail_path(c), class:"list-cocktail"%>
-    </li>
-    <% end %>
-    </ul>
-    <br>
+      <h1 class="juicy-size">Mr. Cocktail<br>Organizer</h1>
+      <ul>
+      <% @cocktails.each do |c| %>
+      <li><%= link_to c.name, cocktail_path(c), class:"list-cocktail"%>
+      </li>
+      <% end %>
+      </ul>
+      <br>
 
-    <div class="button">
-    <%= link_to 'Add a new cocktail', new_cocktail_path %>
-    </div>
+      <div class="button">
+      <%= link_to 'Add a new cocktail', new_cocktail_path %>
+      </div>
     </div>
 
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
-       <div class="carousel-item" data-interval="2000">
+       <div class="carousel-item">
         <%= image_tag "cocktails (2).jpg", class: "cocktail-img" %>
         </div>
-        <div class="carousel-item active" data-interval="2000">
-          <%= image_tag "cocktails.jpg", class: "cocktail-img" %>
-        </div>
-         <div class="carousel-item" data-interval="2000">
+         <div class="carousel-item">
         <%= image_tag "cocktails (3).jpg", class: "cocktail-img" %>
         </div>
       </div>
-
     </div>
-
   </div>
 </div>
