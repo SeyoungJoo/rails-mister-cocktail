@@ -36,7 +36,8 @@ end
   }
 
 
-  cocktail = Cocktail.create!(attributes)
+  cocktail = Cocktail.new(attributes)
+  cocktail.save!
 
   5.times do
   one_ingredient = all_ingredients.sample
