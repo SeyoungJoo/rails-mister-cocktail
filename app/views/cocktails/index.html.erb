@@ -1,9 +1,7 @@
 <div class="index-bg">
-
-
   <div class="flexbox">
     <div class="center-text">
-    <h1 class="juicy-size">Juicy<br>Strawberry<br>Cocktail</h1>
+    <h1 class="juicy-size">Mr.<br>Cocktail<br>Organizer</h1>
     <ul>
     <% @cocktails.each do |c| %>
     <li><%= link_to c.name, cocktail_path(c), class:"list-cocktail"%>
@@ -17,10 +15,20 @@
     </div>
     </div>
 
-    <div class="img-div">
-    <%= image_tag "cocktail3.jpg", class:"cocktail-img" %>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="2000">
+            <img src="assets/cocktails.jpg" class="cocktail-img" alt="...">
+        </div>
+        <div class="carousel-item" data-interval="2000">
+          <img src="assets/cocktails (1).jpg" class="cocktail-img" alt="...">
+        </div>
+        <div class="carousel-item" data-interval="2000">
+          <img src="assets/cocktails (2).jpg" class="cocktail-img" alt="...">
+        </div>
+      </div>
+
     </div>
 
   </div>
 </div>
-
