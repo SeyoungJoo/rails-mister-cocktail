@@ -1,24 +1,49 @@
-// .nametag{
-//   color: $blue;
-//   font-family: $headers-font;
-//   font-size: 16px;
-// }
-
 .pagebox {
-  width: 600px;
+  width: 1000px;
   margin: 0 auto;
   padding: 40px;
+  padding-bottom: 60px;
   margin-top: 60px;
   background-color: $blue;
   border-radius: 8px;
   color: $pink;
   font-family: $headers-font;
   font-size: 32px;
-
   a {
     color: $white;
     background-color: $blue;
     padding: 8px;
+    font-size: 20px;
   }
 }
 
+.description {
+  font-size: 24px;
+  color: white;
+}
+
+.nametag {
+  margin:0;
+}
+
+.ingredient-box {
+  position: relative;
+  padding: 50px 0px 30px 30px;
+}
+
+.list-group-item {
+  font-size: 28px;
+}
+
+.buttons {
+  text-align: left;
+  padding: 10px 0;
+  position: absolute;
+  right: 0px;
+}
+
+.cocktail-show-img{
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}

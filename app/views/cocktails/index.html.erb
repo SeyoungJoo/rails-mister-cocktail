@@ -1,7 +1,7 @@
 <div class="index-bg">
   <div class="flexbox">
     <div class="center-text">
-    <h1 class="juicy-size">Mr.<br>Cocktail<br>Organizer</h1>
+    <h1 class="juicy-size">Mr. Cocktail<br>Organizer</h1>
     <ul>
     <% @cocktails.each do |c| %>
     <li><%= link_to c.name, cocktail_path(c), class:"list-cocktail"%>
@@ -25,9 +25,6 @@
         </div>
          <div class="carousel-item" data-interval="2000">
         <%= image_tag "cocktails (3).jpg", class: "cocktail-img" %>
-        </div>
-        <div class="carousel-item" data-interval="2000">
-         <%= image_tag "cocktails (1).jpg", class: "cocktail-img" %>
         </div>
       </div>
 

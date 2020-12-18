@@ -1,22 +1,34 @@
 <div class="pagebox">
-  <p class="nametag">
-    <%= @cocktail.name%>
-  </p>
+  <div class="d-flex justify-content-around">
+    <div>
+      <p class="nametag">
+        <%= @cocktail.name%>
+      </p>
+      <p class="description">
+        : <%= @cocktail.description%>
+      </p>
+      <div class="cocktail-show-img">
+      <img src="<%= @cocktail.img_url %>", style="width: 300px; height: 300px; object-fit: cover;">
+      </div>
+    </div>
 
-  <ul class="list-group">
-    <% @cocktail.doses.each do |dose| %>
-      <li class="list-group-item">
-        <%= dose.description %>
-        <%= dose.ingredient.name %>
-      <%= link_to "Remove",
-                    dose_path(dose),
-                    method: :delete,
-                    data: {confirm: "Are you sure?"}  %>
-      </li>
-    <% end %>
-  </ul>
-  <br>
-  <%= link_to 'Back', root_path %> |
-  <%= link_to 'Add a Dose',  new_cocktail_dose_path(@cocktail) %>
-
+    <div class="ingredient-box">
+      <ul class="list-group">
+        <% @cocktail.doses.each do |dose| %>
+          <li class="list-group-item">
+            <%= dose.description %>
+            <%= dose.ingredient.name %>
+          <%= link_to "Remove",
+                        dose_path(dose),
+                        method: :delete,
+                        data: {confirm: "Are you sure?"}  %>
+          </li>
+        <% end %>
+      </ul>
+      <div class="buttons">
+        <%= link_to 'Back', root_path %> |
+        <%= link_to 'Add a Dose',  new_cocktail_dose_path(@cocktail) %>
+      </div>
+    </div>
+  </div>
 </div>

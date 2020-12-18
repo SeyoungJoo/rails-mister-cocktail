@@ -2,7 +2,13 @@
 <div class="new-cocktail-page">
 <h1>New Cocktail</h1>
 
-<%= render 'form', cocktail: @cocktail %>
+<div class="container form">
+  <%= simple_form_for(@cocktail) do  |c|%>
+    <%= c.input :name %>
+    <%= c.input :description %>
+    <%= c.button :submit, "CREATE", class: "button-create" %>
+  <% end %>
+</div>
 
 <div class="button-back">
 <%= link_to 'Go Back', root_path, class:"back"%>
