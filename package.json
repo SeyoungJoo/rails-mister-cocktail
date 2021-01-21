@@ -2,17 +2,27 @@
   "name": "rails_mister_cocktail",
   "private": true,
   "dependencies": {
+    "@babel/preset-react": "^7.12.10",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "4.3.0",
+    "@rails/webpacker": "3.5",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "babel-preset-react": "^6.24.1",
     "bootstrap": "^4.5.3",
+    "history": "^5.0.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
+    "prop-types": "^15.7.2",
+    "axios": "^0.21.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "web-vitals": "^0.2.4",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",
   "devDependencies": {
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "2.11.2"
   }
 }

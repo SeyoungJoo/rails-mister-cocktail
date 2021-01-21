@@ -3,6 +3,7 @@
 @import "bg";
 @import "new";
 @import "show";
+@import "ImageList";
 
 h1 {
   font-family: $headers-font;
@@ -27,25 +28,25 @@ h1 {
   padding: 0 250px;
 }
 
-.list-cocktail{
+.list-cocktail {
   color: white;
 }
 
-.cocktail-img{
+.cocktail-img {
   width: 300px;
 }
 
-.img-div{
+.img-div {
   display: block;
 }
 
-.center-text{
+.center-text {
   text-align: center;
   padding-top: 100px;
   text-align: left;
 }
 
-.juicy-size{
+.juicy-size {
   font-size: 80px;
 }
 
